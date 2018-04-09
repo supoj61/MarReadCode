@@ -144,9 +144,9 @@ public class ShowChildFragment extends Fragment {
 
         Notification.Builder builder = new Notification.Builder(getActivity());
         builder.setTicker(getString(R.string.app_name));
-        builder.setContentTitle(messageStrings[3] + " Have Message");
-        builder.setContentText("Please Click Here");
-        builder.setSmallIcon(R.drawable.ic_action_message);
+        builder.setContentTitle(messageStrings[3] + " " + getString(R.string.new_message));
+        builder.setContentText(getString(R.string.click_show));
+        builder.setSmallIcon(R.drawable.ms);
         builder.setSound(uri);
         builder.setContentIntent(pendingIntent);
 

@@ -5,12 +5,21 @@
     android:orientation="vertical">
 
     <!--Toolbar-->
+
     <include
         android:id="@+id/toolbarShowNoti"
         layout="@layout/toolbar_main" />
 
     <!--Content Message-->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/show_data" />
+
     <ListView
+        android:background="@color/colorListview"
         android:id="@+id/listViewMessage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
