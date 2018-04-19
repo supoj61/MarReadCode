@@ -2,6 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <item
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_message"
+        android:id="@+id/itemReadMessage"
+        android:title="Read QR or Bar Code" />
 
     <item
         app:showAsAction="always"

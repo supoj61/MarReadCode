@@ -21,6 +21,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import org.json.JSONArray;
@@ -53,6 +54,8 @@ public class ShowNotiFragment extends Fragment{
     }
 
 
+    private void setContentView(int activity_main) {
+    }
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
@@ -75,6 +78,8 @@ public class ShowNotiFragment extends Fragment{
 //        Create ListView
         createListView();
         myLoop();
+        
+        
     }   // Main Class
 
     private void changeStatus() {
@@ -173,8 +178,9 @@ public class ShowNotiFragment extends Fragment{
 
         Notification.Builder builder = new Notification.Builder(getActivity());
         builder.setTicker(getString(R.string.app_name));
-        builder.setContentTitle(messageStrings[3] + " Have Message");
-        builder.setContentText("Please Click Here");
+        builder.setContentTitle(messageStrings[3] + " " + getString(R.string.new_message));
+       // builder.setContentTitle(messageStrings[3] + " Have Message");
+        builder.setContentText(getString(R.string.click_show));
         builder.setSmallIcon(R.drawable.ms);
         builder.setSound(uri);
         builder.setContentIntent(pendingIntent);

@@ -62,6 +62,8 @@ public class ShowChildFragment extends Fragment {
     private ZXingScannerView zXingScannerView;
     private String resultFromReadQrString;
 
+
+
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -128,6 +130,7 @@ public class ShowChildFragment extends Fragment {
         }, 1000);
 
     }
+
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     private void myNoticication(String[] messageStrings) {
@@ -197,8 +200,21 @@ public class ShowChildFragment extends Fragment {
             return true;
         }
 
+        if(item.getItemId()==R.id.itemReadMessage){
+            showDataTscore();
+            
+            return true;
+           // getActivity().finish();
+        }
+
         return super.onOptionsItemSelected(item);
     }
+private  void showDataTscore(){
+
+    Intent intent = new Intent(getActivity(),ShowDataTscore.class);
+    // intent.putExtra("Code", resultFromReadQrString);
+    startActivity(intent);
+}
 
     private void readQRandBar() {
 

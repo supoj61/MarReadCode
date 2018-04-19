@@ -15,13 +15,13 @@ public class MyConstant {
 
 
     //    About URL
-    private String urlEditMessageWhereCode = "http://androidthai.in.th/mar/EditChildByCode.php";
-    private String urlGetMessageWhereCode = "http://androidthai.in.th/mar/getMessageWhereCode.php";
-    private String urlEditStatusWhereIDuser = "http://androidthai.in.th/mar/EditStatusByUser.php";
-    private String urlGetChildWhereIdUser = "http://androidthai.in.th/mar/getChildWhereIdUser.php";
-    private String urlAddChildString = "http://androidthai.in.th/mar/AddChild.php";
-    private String urlGetAllUserString = "http://androidthai.in.th/mar/getAllUser.php";
-    private String urlPostUserString = "http://androidthai.in.th/mar/postUser.php";
+    private String urlEditMessageWhereCode = "http://tscore.ms.ac.th/ms_student/EditChildByCode.php";
+    private String urlGetMessageWhereCode = "http://tscore.ms.ac.th/ms_student/getMessageWhereCode.php";
+    private String urlEditStatusWhereIDuser = "http://tscore.ms.ac.th/ms_student/EditStatusByUser.php";
+    private String urlGetChildWhereIdUser = "http://tscore.ms.ac.th/ms_student/getChildWhereIdUser.php";
+    private String urlAddChildString = "http://tscore.ms.ac.th/ms_student/AddChild.php";
+    private String urlGetAllUserString = "http://tscore.ms.ac.th/ms_student/getAllUser.php";
+    private String urlPostUserString = "http://tscore.ms.ac.th/ms_student/postUser.php";
 
     //    About Array
     private String[] columnMessageStrings = new String[]{"id", "idUser", "Code",
